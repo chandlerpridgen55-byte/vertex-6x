@@ -1,341 +1,181 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vertex 6X | Rust Console Servers</title>
-<link rel="icon" type="image/png" href="favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Orbitron',sans-serif;
-}
-
-body{
-background:#050816;
-color:white;
-overflow-x:hidden;
-}
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:
-radial-gradient(circle at center,#0d3eff22,#000000);
-z-index:-2;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
-background:rgba(0,0,0,.6);
-backdrop-filter:blur(10px);
-border-bottom:1px solid #0f5cff;
-}
-
-.logo{
-font-size:2rem;
-font-weight:700;
-color:#4d8dff;
-text-shadow:0 0 20px #4d8dff;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-nav a:hover{
-color:#4d8dff;
-}
-
-.discord-btn{
-background:#4d8dff;
-padding:12px 24px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-}
-
-.hero{
-min-height:85vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero img{
-width:280px;
-margin-bottom:20px;
-filter:drop-shadow(0 0 30px #4d8dff);
-}
-
-.hero h1{
-font-size:5rem;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:1.3rem;
-color:#c7d8ff;
-margin-bottom:30px;
-}
-
-.buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:15px 35px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.primary{
-background:#2563eb;
-color:white;
-}
-
-.secondary{
-border:2px solid #2563eb;
-color:white;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:50px;
-}
-
-.card{
-background:#0d1225;
-padding:25px;
-border:1px solid #1e40af;
-border-radius:15px;
-text-align:center;
-}
-
-.card h3{
-color:#4d8dff;
-margin-bottom:10px;
-}
-
-.wipes{
-padding:50px;
-text-align:center;
-}
-
-.wipe-box{
-max-width:700px;
-margin:auto;
-background:#0d1225;
-padding:30px;
-border-radius:15px;
-border:1px solid #1e40af;
-}
-
-footer{
-padding:40px;
-text-align:center;
-color:#888;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-<div class="logo">VERTEX 6X</div>
+<nav class="navbar">
+    <div class="logo">
+        <img src="vertex-logo.png" alt="Vertex 6X">
+    </div>
 
+```
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Servers</a></li>
-<li><a href="#">Clans</a></li>
-<li><a href="#">Leaderboards</a></li>
-<li><a href="#">Kits</a></li>
-<li><a href="#">Store</a></li>
-<li><a href="#">Rules</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Servers</a></li>
+    <li><a href="#">Clans</a></li>
+    <li><a href="#">Leaderboards</a></li>
+    <li><a href="#">Kits</a></li>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">Rules</a></li>
 </ul>
 
-<a class="discord-btn" href="https://discord.gg/STYKXTmKQK">Discord</a>
+<a href="https://discord.gg/STYKXTmKQK" class="discord-btn">
+    Discord
+</a>
+```
+
 </nav>
 
 <section class="hero">
 
-<!-- Replace with your logo -->
-<img src="vertex-logo.png" alt="Vertex 6X">
+```
+<div class="hero-overlay">
 
-<h1>VERTEX 6X</h1>
+    <img src="vertex-logo.png" class="hero-logo">
 
-<p>Premium Rust Console 6X Weekly Clan Server</p>
+    <h3>PREMIUM RUST CONSOLE</h3>
 
-<div class="buttons">
-<a href="https://discord.gg/STYKXTmKQK" class="btn primary">Join Discord</a>
-<a href="#" class="btn secondary">View Server</a>
+    <h1>6X WEEKLY CLAN SERVER</h1>
+
+    <div class="hero-buttons">
+        <a href="https://discord.gg/STYKXTmKQK" class="btn-primary">
+            Join Discord
+        </a>
+
+        <a href="#" class="btn-secondary">
+            View Server
+        </a>
+    </div>
+
 </div>
+```
 
 </section>
 
 <section class="stats">
 
-<div class="card">
-<h3>Server Status</h3>
-<p>Online</p>
+```
+<div class="stat-card">
+    <h2>🟢</h2>
+    <h3>Status</h3>
+    <p>Coming Soon</p>
 </div>
 
-<div class="card">
-<h3>Players Online</h3>
-<p>0 / 200</p>
+<div class="stat-card">
+    <h2>👥</h2>
+    <h3>Players</h3>
+    <p>Coming Soon</p>
 </div>
 
-<div class="card">
-<h3>Wipe Cycle</h3>
-<p>Weekly</p>
+<div class="stat-card">
+    <h2>📅</h2>
+    <h3>Wipes</h3>
+    <p>Weekly</p>
 </div>
 
-<div class="card">
-<h3>Discord Members</h3>
-<p>Coming Soon</p>
+<div class="stat-card">
+    <h2>💬</h2>
+    <h3>Discord</h3>
+    <p>Growing Daily</p>
 </div>
+```
 
 </section>
 
-<section class="wipes">
+<section class="news">
 
-<h2 style="margin-bottom:25px;">Upcoming Wipe</h2>
+```
+<h2>Latest News</h2>
 
-<div class="wipe-box">
-<h3>Vertex 6X Weekly</h3>
-<br>
-<p>Every Thursday @ 12PM EST</p>
-<br>
-<h1 style="color:#4d8dff;">3D 14H 32M</h1>
+<div class="news-grid">
+
+    <div class="news-card">
+        <h3>Server Launch</h3>
+        <p>Vertex 6X is preparing for launch.</p>
+    </div>
+
+    <div class="news-card">
+        <h3>VIP Store</h3>
+        <p>Store opening soon.</p>
+    </div>
+
+    <div class="news-card">
+        <h3>Clan Events</h3>
+        <p>More information soon.</p>
+    </div>
+
 </div>
+```
+
+</section>
+
+<section class="store">
+
+```
+<h2>Store</h2>
+
+<div class="store-card">
+
+    <h3>VIP</h3>
+
+    <p>
+        Priority Queue<br>
+        VIP Chat Tag<br>
+        Starter Kit<br>
+        Discord Role
+    </p>
+
+    <div class="price">
+        $9.99
+    </div>
+
+    <button>
+        Coming Soon
+    </button>
+
+</div>
+```
+
+</section>
+
+<section class="features">
+
+```
+<h2>Why Vertex 6X?</h2>
+
+<div class="feature-grid">
+
+    <div class="feature-box">⚡ 6X Gather Rates</div>
+
+    <div class="feature-box">🏆 Clan Focused</div>
+
+    <div class="feature-box">🛡 Active Staff</div>
+
+    <div class="feature-box">🎮 Console Optimized</div>
+
+</div>
+```
 
 </section>
 
 <footer>
-© 2026 Vertex 6X Rust Servers
+
+```
+<p>
+    Vertex 6X © 2026
+</p>
+```
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-<section class="store-section">
-    <h2>Vertex 6X Store</h2>
-    <p class="store-subtitle">Support the server and unlock exclusive perks.</p>
-
-```
-<div class="store-grid">
-
-    <div class="store-card">
-        <h3>VIP</h3>
-        <p>Priority Queue, VIP Kit, Exclusive Chat Tag</p>
-        <button class="coming-soon">Coming Soon</button>
-    </div>
-
-    <div class="store-card">
-        <h3>Queue Skip</h3>
-        <p>Skip ahead in the server queue.</p>
-        <button class="coming-soon">Coming Soon</button>
-    </div>
-
-    <div class="store-card">
-        <h3>Ranks</h3>
-        <p>Unlock additional perks and bonuses.</p>
-        <button class="coming-soon">Coming Soon</button>
-    </div>
-
-    <div class="store-card">
-        <h3>Packs</h3>
-        <p>Builder, PvP, and Raid packs available at launch.</p>
-        <button class="coming-soon">Coming Soon</button>
-    </div>
-
-</div>
-```
-
-</section>
-
-<style>
-.store-section{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.store-section h2{
-    font-size:42px;
-    color:#4d8dff;
-    margin-bottom:10px;
-}
-
-.store-subtitle{
-    color:#c7d8ff;
-    margin-bottom:40px;
-}
-
-.store-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    max-width:1200px;
-    margin:auto;
-}
-
-.store-card{
-    background:#0d1225;
-    border:1px solid #2563eb;
-    border-radius:16px;
-    padding:30px;
-    transition:0.3s;
-}
-
-.store-card:hover{
-    transform:translateY(-5px);
-}
-
-.store-card h3{
-    color:#4d8dff;
-    margin-bottom:15px;
-}
-
-.store-card p{
-    margin-bottom:20px;
-}
-
-.coming-soon{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:12px 24px;
-    border-radius:8px;
-    cursor:pointer;
-}
-</style>
-
