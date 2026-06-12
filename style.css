@@ -40,10 +40,13 @@ font-weight:600;
 transition:.3s;
 }
 
-.navbar a:hover
+.navbar a:hover{
+color:#4d8dff;
+}
 
 .logo img{
 height:60px;
+width:auto;
 }
 
 .discord-btn{
