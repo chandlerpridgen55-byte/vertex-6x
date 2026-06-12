@@ -247,3 +247,95 @@ color:#888;
 
 </body>
 </html>
+<section class="store-section">
+    <h2>Vertex 6X Store</h2>
+    <p class="store-subtitle">Support the server and unlock exclusive perks.</p>
+
+```
+<div class="store-grid">
+
+    <div class="store-card">
+        <h3>VIP</h3>
+        <p>Priority Queue, VIP Kit, Exclusive Chat Tag</p>
+        <button class="coming-soon">Coming Soon</button>
+    </div>
+
+    <div class="store-card">
+        <h3>Queue Skip</h3>
+        <p>Skip ahead in the server queue.</p>
+        <button class="coming-soon">Coming Soon</button>
+    </div>
+
+    <div class="store-card">
+        <h3>Ranks</h3>
+        <p>Unlock additional perks and bonuses.</p>
+        <button class="coming-soon">Coming Soon</button>
+    </div>
+
+    <div class="store-card">
+        <h3>Packs</h3>
+        <p>Builder, PvP, and Raid packs available at launch.</p>
+        <button class="coming-soon">Coming Soon</button>
+    </div>
+
+</div>
+```
+
+</section>
+
+<style>
+.store-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.store-section h2{
+    font-size:42px;
+    color:#4d8dff;
+    margin-bottom:10px;
+}
+
+.store-subtitle{
+    color:#c7d8ff;
+    margin-bottom:40px;
+}
+
+.store-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.store-card{
+    background:#0d1225;
+    border:1px solid #2563eb;
+    border-radius:16px;
+    padding:30px;
+    transition:0.3s;
+}
+
+.store-card:hover{
+    transform:translateY(-5px);
+}
+
+.store-card h3{
+    color:#4d8dff;
+    margin-bottom:15px;
+}
+
+.store-card p{
+    margin-bottom:20px;
+}
+
+.coming-soon{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+}
+</style>
+
