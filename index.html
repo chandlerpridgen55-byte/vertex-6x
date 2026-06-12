@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertex 6X | Rust Console Servers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at center,#0d3eff22,#000000);
+z-index:-2;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #0f5cff;
+}
+
+.logo{
+font-size:2rem;
+font-weight:700;
+color:#4d8dff;
+text-shadow:0 0 20px #4d8dff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#4d8dff;
+}
+
+.discord-btn{
+background:#4d8dff;
+padding:12px 24px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+}
+
+.hero{
+min-height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:280px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 30px #4d8dff);
+}
+
+.hero h1{
+font-size:5rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.3rem;
+color:#c7d8ff;
+margin-bottom:30px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.primary{
+background:#2563eb;
+color:white;
+}
+
+.secondary{
+border:2px solid #2563eb;
+color:white;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:50px;
+}
+
+.card{
+background:#0d1225;
+padding:25px;
+border:1px solid #1e40af;
+border-radius:15px;
+text-align:center;
+}
+
+.card h3{
+color:#4d8dff;
+margin-bottom:10px;
+}
+
+.wipes{
+padding:50px;
+text-align:center;
+}
+
+.wipe-box{
+max-width:700px;
+margin:auto;
+background:#0d1225;
+padding:30px;
+border-radius:15px;
+border:1px solid #1e40af;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">VERTEX 6X</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Servers</a></li>
+<li><a href="#">Clans</a></li>
+<li><a href="#">Leaderboards</a></li>
+<li><a href="#">Kits</a></li>
+<li><a href="#">Store</a></li>
+<li><a href="#">Rules</a></li>
+</ul>
+
+<a class="discord-btn" href="https://discord.gg/STYKXTmKQK">Discord</a>
+</nav>
+
+<section class="hero">
+
+<!-- Replace with your logo -->
+<img src="logo.png" alt="Vertex 6X">
+
+<h1>VERTEX 6X</h1>
+
+<p>Premium Rust Console 6X Weekly Clan Server</p>
+
+<div class="buttons">
+<a href="https://discord.gg/STYKXTmKQK" class="btn primary">Join Discord</a>
+<a href="#" class="btn secondary">View Server</a>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+<h3>Server Status</h3>
+<p>Online</p>
+</div>
+
+<div class="card">
+<h3>Players Online</h3>
+<p>0 / 200</p>
+</div>
+
+<div class="card">
+<h3>Wipe Cycle</h3>
+<p>Weekly</p>
+</div>
+
+<div class="card">
+<h3>Discord Members</h3>
+<p>Coming Soon</p>
+</div>
+
+</section>
+
+<section class="wipes">
+
+<h2 style="margin-bottom:25px;">Upcoming Wipe</h2>
+
+<div class="wipe-box">
+<h3>Vertex 6X Weekly</h3>
+<br>
+<p>Every Thursday @ 12PM EST</p>
+<br>
+<h1 style="color:#4d8dff;">3D 14H 32M</h1>
+</div>
+
+</section>
+
+<footer>
+© 2026 Vertex 6X Rust Servers
+</footer>
+
+</body>
+</html>
