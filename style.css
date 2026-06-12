@@ -61,7 +61,7 @@ linear-gradient(
 rgba(0,0,0,.55),
 rgba(0,0,0,.75)
 ),
-url("hero-bg.jpg");
+url("hero-bg.png");
 
 background-size:cover;
 background-position:center;
